@@ -1,0 +1,68 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<title>FASHION KING KOREA</title>
+</head>
+<script src="https://developers.kakao.com/sdk/js/kakao.min.js"></script>
+<body bgcolor="#000000" leftmargin="0" topmargin="0" marginwidth="0" marginheight="0">
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td colspan="3"><img src="images_new/fk2_imgs_01.gif" width="100%" height="auto" alt=""/></td>
+    </tr>
+    <tr>
+      <td><a href="http://bnsfolio.com/fk/archives/category/방송다시보기"><img src="images_new/fk2_imgs_02.gif" width="100%" height="auto" alt=""/></a></td>
+      <td><a href="http://bnsfolio.com/fk/archives/category/미공개영상-예고"><img src="images_new/fk2_imgs_03.gif" width="100%" height="auto" alt=""/></a></td>
+      <td><a href="http://bnsfolio.com/fk/갤러리-3"><img src="images_new/fk2_imgs_04.gif" width="100%" height="auto" alt=""/></a></td>
+    </tr>
+    <tr>
+      <td><a href="http://bnsfolio.com/fk/archives/category/이벤트"><img src="images_new/fk2_imgs_05.gif" width="100%" height="auto" alt=""/></a></td>
+      <td><a href="http://m.gmarket.co.kr/Event/m_eventview/index.asp?msid=862&viewnum=5#sel4"><img src="images_new/fk2_imgs_06.gif" width="100%" height="auto" alt=""/></a></td>
+      <td><a id="kakao-link-btn" href="javascript:;"><img src="images_new/fk2_imgs_07.gif" width="100%" height="auto" alt=""/></a></td>
+    </tr>
+    <tr>
+      <td colspan="3"><img src="images_new/fk2_imgs_08.jpg" width="100%" height="auto" alt=""/></td>
+    </tr>
+  </tbody>
+
+<script>
+// 사용할 앱의 Javascript 키를 설정해 주세요.
+
+Kakao.init('자바스크립트 키를 입력 하세요');
+
+// 카카오톡 링크 버튼을 생성합니다. 처음 한번만 호출하면 됩니다.
+Kakao.Link.createTalkLinkButton({
+  container: '#kakao-link-btn',
+  label: '스타와 디자이너의 썸&쌈 콜라보레이션 패션왕 코리아에 초대 합니다. ',
+  image: {
+    src: 'http://bnsfolio.com/fk/images/fk_icon_100.png',
+    width: '100',
+    height: '100'
+  },
+  webButton: {
+    text: '패션왕 코리아 (SBS공식앱)',
+    url: 'https://play.google.com/store/apps/details?id=com.macaron.FashionKing' // 앱 설정의 웹 플랫폼에 등록한 도메인의 URL이어야 합니다.
+  }
+});
+
+/*
+function sendLink() {
+	Kakao.Link.sendTalkLink({
+	  label: '스타와 디자이너의 썸&쌈 콜라보레이션 패션왕 코리아에 초대 합니다. ',
+	  image: {
+		src: 'http://bnsfolio.com/fk/images/fk_icon_100.png',
+		width: '100',
+		height: '100'
+	  },
+	  webButton: {
+		text: '패션왕 코리아 (SBS공식앱)',
+		url: 'https://play.google.com/store/apps/details?id=com.macaron.FashionKing' // 앱 설정의 웹 플랫폼에 등록한 도메인의 URL이어야 합니다.
+	  }
+	});
+}
+*/
+</script>
+</body>
+</html>
