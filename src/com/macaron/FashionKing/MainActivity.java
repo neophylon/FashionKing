@@ -43,7 +43,7 @@ public class MainActivity extends Activity {
 		webView.getSettings().setAppCacheEnabled(true);
 		webView.getSettings().setBuiltInZoomControls(true);
 		webView.getSettings().setSaveFormData(true);
-		webView.loadUrl("http://www.bnsfolio.com/fk");
+		webView.loadUrl("http://your domain");
 	}
 
 	public boolean inCustomView() {
